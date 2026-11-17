@@ -1,0 +1,133 @@
+.footer {
+  background-color: var(--color-footer);
+  color: var(--color-footer-text);
+  font-family: 'Poppins', sans-serif;
+  padding-top: var(--space-xl);
+}
+
+.footer-top {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 60px 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-top p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  color: var(--color-footer-text);
+  font-size: 1.2rem;
+  background-color: var(--color-footer-elevated);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a svg {
+  width: 18px;
+  height: 18px;
+}
+
+.social-icons a:hover {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  transform: translateY(-3px);
+}
+
+.footer-grid {
+  width: 100%;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 40px;
+  padding: 40px 60px;
+}
+
+.footer-col h4 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.footer-col p {
+  line-height: 1.6;
+  font-size: 0.95rem;
+  color: var(--color-footer-muted);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col ul li {
+  font-size: 0.95rem;
+  color: var(--color-footer-muted);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-col ul li svg {
+  flex: 0 0 auto;
+  width: 17px;
+  height: 17px;
+  color: var(--color-primary);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px 16px;
+  font-size: 0.85rem;
+  color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-bottom p {
+  margin: 4px 0;
+}
+
+.footer-bottom a {
+  color: var(--color-primary);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+    padding: 0 16px 24px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 16px;
+  }
+}
